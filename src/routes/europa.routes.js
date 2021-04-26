@@ -1,17 +1,18 @@
+
 const {Router} = require('express');
 const pool = require('../database');
 const router = Router();
+const {renderEuro}=require('../controllers/europa')
+
+router.get('/euro/euro',renderEuro);
 
 
 
 
 
-router.get('/',(req,res)=>{
-    res.render('index')
-})
 
 
- 
+
 
 
 

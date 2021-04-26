@@ -1,25 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="/">Bildugen</a>
+    <a class="navbar-brand" href="/">Tusa APuestas</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        {{#if user}}
+        {{!-- {{#if user}} --}}
         <li class="nav-item active">
-          <a class="nav-link" href="/user/home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/user/home">Home 
+          {{!-- <span class="sr-only">(current)</span></a> --}}
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/perfil">Perfil</a>
+          <a class="nav-link" href="/ligae/e">Liga Santander</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/uefa/uefa">UEFA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/euro/euro">UEFA Europa League</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/equipos">Equipos</a>
+        </li>
+        <li class="nav-item">
+          <li class="nav-item">
+          <a class="nav-link" href="/apuestas/jugadores">Jugadores</a>
+        </li>
+          <a class="nav-link" href="/user/perfil">Perfil</a>
         </li>
         <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a href="/user/logout"class="nav-link">Logout</a>
         </li>
         </ul>
-        {{else}}
+        {{!-- {{else}} --}}
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -28,7 +44,7 @@
         <li class="nav-item">
           <a href="/user/login"class="nav-link">Login</a>
         </li>
-        {{/if}}
+        {{!-- {{/if}} --}}
       </ul>
     </div>
   </div>

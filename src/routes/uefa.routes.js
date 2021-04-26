@@ -1,19 +1,12 @@
+
 const {Router} = require('express');
 const pool = require('../database');
 const router = Router();
+const{renderUefa} = require('../controllers/uefa')
 
 
 
-
-
-router.get('/',(req,res)=>{
-    res.render('index')
-})
-
-
- 
-
-
+router.get('/uefa/uefa',renderUefa)
 
 
 

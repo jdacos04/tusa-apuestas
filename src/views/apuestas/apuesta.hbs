@@ -1,21 +1,23 @@
-<div class="container">
-<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-  <div class="card-header">APUESTA</div>
-  <div class="card-body">
-    <h4 class="card-title">Equipo 1 contra equipo 2</h4>
-    <p class="card-text">Selecion al ganador</p>
-
-<div class="form-group">
-  <label class="col-form-label" for="inputDefault">Monto a apostar</label>
-  <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-</div>
-
-<button type="button" class="btn btn-primary">equipo 1</button>
-<button type="button" class="btn btn-secondary">equipo 2</button>
-
-
-<button type="button" class="btn btn-primary btn-lg">Apostar</button>
-
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <form action="/apuestas/apuesta" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" name="titulo" placeholder="titulo" autofocus>
+            </div>
+            <div class="form-group">
+            <input type="text" class="form-control" name="contenido" placeholder="contenido" autofocus>
+            </div>
+          <div class="form-group">
+              <button class="btn btn-success btnblock">
+              apuesta pues
+            </button>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
 </div>
